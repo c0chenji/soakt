@@ -1,5 +1,7 @@
 :root{
-  --shadow:10px 10px 5px grey;
+  --shadow:20px 20px 20px rgba(228, 228, 228, 0.918);
+  --lightGrey:lightgray;
+  --btn-color:grey;
 }
 .App {
   text-align: center;
@@ -10,9 +12,9 @@ html{
 }
 
 body{
-  background: lightgray;
+  background:var(--lightGrey);
 }
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -40,7 +42,7 @@ body{
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .flex-container{
   display: flex;
@@ -48,6 +50,8 @@ body{
   justify-content: space-between;
   padding: 1rem;
 }
+
+/*style for content*/
  ul> li{
   color:#fff;
   list-style: none;
@@ -56,11 +60,61 @@ body{
 li> i{
   font-size: 2rem;
 }
-
 .main-content{
   box-shadow: var(--shadow);
 }
 .slogan{
   text-align: left;
   font-size: 3rem;
+  line-height: 3rem;
+  display: block;
+  padding: 2rem 0;
+  
 }
+.content-box{
+  padding: 10rem;
+}
+.search-section{
+  display: flex;
+  justify-content:space-between;
+  font-size:0.7rem;
+}
+.search-section>button{
+  width:8vw;
+ 
+}
+.launch-section{
+  display: flex;
+  justify-content:space-between; 
+}
+.launch-section >button {
+  width: 15vw;
+  
+}
+.dropdown-btn{
+  background: var(--lightGrey);
+  border: none;
+  box-shadow: none;  
+}
+.dropdown-btn i{
+  color: grey;
+}
+.search-title{
+ 
+  display:block;
+  text-align: left;
+}
+input{
+  width: 20vw;
+}
+.launch-title{
+ 
+}
+button{
+  box-shadow: var(--shadow);
+  background:var(--btn-color);
+  color:#fff;
+  font-size:0.7rem;
+  border: none;
+}
+

@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 class NavBar extends Component {
     render() {
         return (
-            <ul class="flex-container">
-                <li><i class="fas fa-bars"></i></li>
+            <ul className="flex-container">
+                <li><i className="fas fa-bars"></i></li>
                 
-                <li class=" ">soakt</li>
-                <li class= "">LOGIN</li>
+                <li className=" ">soakt</li>
+                <li className= "">LOGIN</li>
             </ul>
 
         )
