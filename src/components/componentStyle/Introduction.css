@@ -1,0 +1,31 @@
+@import url("../../App.css");
+
+.intro-container{
+    background-color: #fff;
+    color:gray;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem;
+}
+.intro-content{
+   width:60vh;
+}
+
+ 
+.intro-content>button{
+    background-color: white;
+    color: gray;
+    border: black solid 1px;
+    align-content: center;
+    padding: 12px 10px;
+    font-size: 16px;
+    text-align: center;
+    display:inline-block;
+    cursor:pointer;
+
+
+}

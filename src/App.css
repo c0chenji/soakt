@@ -1,120 +1,128 @@
 :root{
-  --shadow:20px 20px 20px rgba(228, 228, 228, 0.918);
+  --shadow:3px 3px 5px rgba(7, 0, 0, 0.657);
   --lightGrey:lightgray;
   --btn-color:grey;
 }
-.App {
-  text-align: center;
-}
-html{
-  font-family: Arial, Helvetica, sans-serif
-  
+*{
+  box-sizing: border-box;
 }
 
-body{
+html,body{
   background:var(--lightGrey);
-}
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  font-family: Arial, Helvetica, sans-serif -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin:0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*style for main content*/
+.content-box{
+  height:100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding:5rem;
+  
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-.flex-container{
-  display: flex;
-  background-color: rgb(10, 10, 10);
-  justify-content: space-between;
-  padding: 1rem;
-}
-
-/*style for content*/
- ul> li{
-  color:#fff;
-  list-style: none;
-  font-size:1.3rem;
-}
-li> i{
-  font-size: 2rem;
-}
-.main-content{
-  box-shadow: var(--shadow);
+.content-box>hr{
+  width: 100%;
 }
 .slogan{
   text-align: left;
   font-size: 3rem;
   line-height: 3rem;
-  display: block;
-  padding: 2rem 0;
-  
-}
-.content-box{
-  padding: 10rem;
-}
-.search-section{
-  display: flex;
-  justify-content:space-between;
-  font-size:0.7rem;
-}
-.search-section>button{
-  width:8vw;
  
 }
+/* .search-section{
+  padding: 8px 0;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: nowrap;
+}
+.search-section>*,.launch-section>*{
+  display: inline-block;
+} */
+
+.search-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+
+}
+.search-section>*,.launch-section>*{
+margin: 5px 0;
+}
+.location{
+width:300px;
+}
+.day-selection{
+
+  width:300px;
+}
+
 .launch-section{
+  padding: 8px 0;
   display: flex;
   justify-content:space-between; 
+  flex-wrap: wrap;
 }
-.launch-section >button {
-  width: 15vw;
-  
-}
+
 .dropdown-btn{
   background: var(--lightGrey);
   border: none;
-  box-shadow: none;  
+  cursor: pointer;
 }
 .dropdown-btn i{
   color: grey;
 }
+.gear-dropdown-show{
+  display: block;
+  position: absolute;
+  background-color:#fff;
+  font-size: 15px;
+  width: 150px;
+  border-radius:5px;
+  padding: 5px; 
+  box-shadow: var(--shadow);
+}
+.gear-dropdown-close{
+  display: none;
+  position: absolute;
+  background-color:#fff;
+  font-size: 15px;
+  width: 150px;
+  border-radius:5px;
+  padding: 5px; 
+  box-shadow: var(--shadow);
+ 
+}
+.gear-dropdown-show>*{
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin: 5px 0;
+  
+}
+.gear-dropdown-show>span>input{
+  margin-right: 20px;
+}
 .search-title{
- 
-  display:block;
+  padding: 1rem 0;
+}
+.input-style{
+  width: 220px;
+  background:#fff;
   text-align: left;
+  color:grey;
+  padding:1px;
 }
-input{
-  width: 20vw;
-}
-.launch-title{
- 
-}
+
 button{
   box-shadow: var(--shadow);
   background:var(--btn-color);
   color:#fff;
-  font-size:0.7rem;
   border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-
